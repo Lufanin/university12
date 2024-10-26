@@ -33,6 +33,5 @@ class TournamentTest(TestCase):
     @classmethod
     def tearDownClass(cls):
         for k, v in cls.all_results.items():
-            print(f'{v}')
-
+            print(', '.join(str(runner) for runner in v.values()))
 
